@@ -23,6 +23,7 @@ def validate(text):
         raise SystemExit("entry must be a sentence")
 
 
+# Gate: 1-200 chars, one sentence, non-whitespace.
 def main():
     validate(LINE)
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
